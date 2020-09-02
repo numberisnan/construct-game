@@ -2728,7 +2728,9 @@ value){switch(index){case ENABLE:this.SetEnabled(value);break}}GetDebuggerProper
 		{sky: 0},
 		{Keyboard: 0},
 		{wall: 0},
-		{Sprite: 0}
+		{fireworks: 0},
+		{spring: 0},
+		{instructions: 0}
 	];
 }
 
@@ -2841,7 +2843,8 @@ value){switch(index){case ENABLE:this.SetEnabled(value);break}}GetDebuggerProper
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (-n0.ExpInstVar());
-		}
+		},
+		() => "bounce"
 	];
 }
 
